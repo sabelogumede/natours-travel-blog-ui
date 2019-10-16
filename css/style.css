@@ -134,6 +134,20 @@ body {
     }
 }
 
+@keyframes moveInBottom {
+    /* start */
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    /* end */
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -144,6 +158,8 @@ body {
 
     /* animation */
     transition: all .2s;
+    position: relative;
+    
 }
 .btn:hover {
     transform: translateY(-3px);
@@ -156,4 +172,31 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+/* after sudo element */
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+/* button animation */
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
