@@ -1,0 +1,22 @@
+{
+  "name": "natours-travel-blog-ui",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabelogumede/natours-travel-blog-ui.git"
+  },
+  "author": "Sabelo Gumede",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabelogumede/natours-travel-blog-ui/issues"
+  },
+  "homepage": "https://github.com/sabelogumede/natours-travel-blog-ui#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
